@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>HK Model Simulation with Lattice and Neighbors</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Hegselmann-Krause Model Simulation</h1>
+
+    <div class="controls">
+        <label for="confidenceSlider">Confidence Interval:</label>
+        <input type="range" id="confidenceSlider" min="0" max="1" step="0.01" value="0.5">
+        <input type="number" id="confidenceInput" min="0" max="1" step="0.01" value="0.5">
+        <span id="confidenceValue"></span>
+
+        <label for="agentsSlider">Agents per side (NxN grid):</label>
+        <input type="range" id="agentsSlider" min="1" max="10" step="1" value="5">
+        <input type="number" id="agentsInput" min="1" max="10" step="1" value="5">
+        <span id="agentsValue"></span>
+
+        <label for="iterationsSlider">Number of Iterations:</label>
+        <input type="range" id="iterationsSlider" min="1" max="100" step="1" value="50">
+        <input type="number" id="iterationsInput" min="1" max="100" step="1" value="50">
+        <span id="iterationsValue"></span>
+
+        <button id="startButton">Play Simulation</button>
+    </div>
+
+    <canvas id="latticeCanvas"></canvas>
+
+    <div class="colormap">
+        <h3>Color Map (Opinion Values)</h3>
+        <canvas id="colorMapCanvas" width="300" height="50"></canvas>
+    </div>
+
+    <div class="chart-container">
+        <h3>Opinion Dynamics Over Time</h3>
+        <canvas id="opinionChart"></canvas>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
