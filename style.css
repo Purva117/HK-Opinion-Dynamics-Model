@@ -1,0 +1,177 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Adjust body padding to clear the navbar */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Navigation bar styles */
+.navbar {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.layout {
+    display: flex;
+    width: 90%;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.left-section {
+    flex: 1;
+    max-width: 45%; /* Make the left section narrower */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.nav-links a:hover {
+    background-color: #0056b3;
+    border-radius: 5px;
+}
+
+/* Hero section styles */
+.hero-section {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.hero-section h1 {
+    font-size: 2.5em;
+    color: #007bff;
+}
+
+.hero-section p {
+    font-size: 1.2em;
+    color: #555;
+    margin: 0.5em 0 2em;
+}
+
+/* Form styling */
+.form-container {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+form {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    width: 100%;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px; /* Space between form fields */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="number"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Label styling */
+form label {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+/* Input field styling */
+form input {
+    padding: 0.75em;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.chart-container {
+    height: 420px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #fff;
+    max-width: 100%; /* Make chart section narrower */
+}
+
+.right-section {
+    flex: 1;
+    max-width: 50%; /* Keep right section at 50% width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+object#citySVG, object#citySVG-copy {
+    width: 100%;
+    height: 400px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px; /* Space between the two SVG images */
+}
+
+/* Center the button and add vertical spacing */
+.cta-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block; /* Make the button a block element */
+    margin: 30px auto 0 auto; /* Center the button and add top margin */
+}
+
+.cta-button:hover {
+    background-color: #45a049;
+}
